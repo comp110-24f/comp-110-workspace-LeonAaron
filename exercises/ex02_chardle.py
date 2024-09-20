@@ -8,7 +8,7 @@ def input_word() -> str:
     user_word: str = input("Enter a 5-character word: ")
     # Function will only accept 5 letter words without error
     if len(user_word) != 5:
-        print("Error: Word must contain 5 characters")
+        print("Error: Word must contain 5 characters.")
         exit()  # Exit function due to error
     return user_word
 

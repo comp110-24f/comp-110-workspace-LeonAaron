@@ -14,7 +14,7 @@ def guess_a_number() -> None:
     elif int(guess) < secret:  # Changed secret to string for proper concatenation
         print("Your guess was too low! The secret number is " + str(secret))
     elif int(guess) > secret:
-        print("Your guess was too high! The secret numeber is " + str(secret))
+        print("Your guess was too high! The secret number is " + str(secret))
     return None
 
 
