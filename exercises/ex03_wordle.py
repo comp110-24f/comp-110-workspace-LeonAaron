@@ -77,12 +77,12 @@ def main(secret: str) -> None:
     turn: int = 1
     continue_game: bool = True
     secret_word_len: int = len(secret)
-    guess: int = ""
+    guess: str = ""
 
     while continue_game:
         print(f"=== Turn {turn}/6 ===")
-        guess = input_guess(secret_word_len=secret_word_len)
-        print(emojified(guess=guess, secret=secret))
+        guess = input_guess(secret_word_len)
+        print(emojified(guess, secret))
 
         # Checks win
         if guess == secret:
