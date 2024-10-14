@@ -1,11 +1,10 @@
-"""Practice utilizing lists"""
+"""Practice utilizing lists."""
 
 __author__ = "730741513"
 
 
 def all(num_list: list[int], num: int) -> bool:
-    """Shows if all the numbers in num_list are equal to num"""
-
+    """Shows if all the numbers in num_list are equal to num."""
     index: int = 0
 
     # Returns false if num != list item
@@ -22,8 +21,7 @@ def all(num_list: list[int], num: int) -> bool:
 
 
 def max(num_list: list[int]) -> int:
-    """Returns largert num in num_list"""
-
+    """Returns largert num in num_list."""
     # If list is empty, raise a value error
     if len(num_list) == 0:
         raise ValueError("max() arg is an empty List")
@@ -42,8 +40,7 @@ def max(num_list: list[int]) -> int:
 
 
 def is_equal(list1: list[int], list2: list[int]) -> bool:
-    """Checks if every element as every index is equal"""
-
+    """Checks if every element as every index is equal."""
     # Returns False if lists are different length
     if len(list1) != len(list2):
         return False
@@ -60,8 +57,7 @@ def is_equal(list1: list[int], list2: list[int]) -> bool:
 
 
 def extend(list1: list[int], list2: list[int]) -> None:
-    """Appends list2 to list1"""
-
+    """Appends list2 to list1."""
     index: int = 0
 
     # Loops through list 2, appends all values to list 1
