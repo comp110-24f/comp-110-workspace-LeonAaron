@@ -19,10 +19,12 @@ def find_and_remove_max(input_list: list[int]) -> int:
 
     index: int = 0
 
-    # Removes all instances of max:
+    # Finds indexes of max:
     while index < len(input_list):
-        if input_list[index] == max:
+        while input_list[index] == max:
             input_list.pop(index)
+            if index == len(input_list):
+                return max
         # Incriment index
         index += 1
 

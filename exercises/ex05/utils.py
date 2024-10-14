@@ -48,9 +48,10 @@ def add_at_index(input_list: list[int], element: int, index: int) -> None:
     second_half_list: list[int] = []
 
     # Separates list into two halves, only if index is less that input list length
-    if index < len(input_list):
+    # Make sure that len(input list) != 0 as this creates error
+    if index < len(input_list) and len(input_list) != 0:
         for i in range(index, len(input_list)):
-            second_half_list.append(input_list.pop(i))
+            second_half_list.append(input_list.pop(index))
 
     input_list.append(element)
 
