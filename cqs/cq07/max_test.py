@@ -3,7 +3,7 @@
 __author__ = "730741513"
 
 # Be sure to import correct file
-from cqs.cq07.find_max import find_and_remove_max
+from CQs.cq07.find_max import find_and_remove_max
 
 
 def test_find_and_remove_max_return_value() -> None:
