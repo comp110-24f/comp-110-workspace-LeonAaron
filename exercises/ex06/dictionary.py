@@ -36,7 +36,7 @@ def favorite_color(input: dict[str, str]) -> str:
 
 
 def count(input: list[str]) -> dict[str, int]:
-    """Output dictionary with values representing count and keys representing list items."""
+    """Output dictionary with values representing count and keys repres."""
     output: dict[str, int] = {}
 
     # Determines whether key should be created or modifies
@@ -74,7 +74,7 @@ def update_attendance(input: dict[str, list[str]], day: str, student: str) -> No
     """Modify input to add students to values of day."""
 
     # If the day already in dictionary, append value to the student list
-    if day in input:
+    if day in input and student not in input[day]:
         input[day] += [student]
     else:
         # Make sure it student is shown as list
